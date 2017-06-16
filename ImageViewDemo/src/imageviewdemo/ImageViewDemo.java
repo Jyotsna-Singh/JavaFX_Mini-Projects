@@ -20,15 +20,15 @@ public class ImageViewDemo extends Application {
     
     @Override
     public void start(Stage primaryStage) {
-        Image pic = new Image("imageviewdemo/goals-vertical.PNG");
+        Image pic = new Image("imageviewdemo/wolf.jpg");
         ImageView ivPic = new ImageView(pic);
         ivPic.setFitHeight(600);
-        ivPic.setFitWidth(500);
+        ivPic.setFitWidth(1200);
         
         BorderPane pane = new BorderPane();
         pane.setCenter(ivPic);
         
-        Scene scene = new Scene(pane, 400, 300);
+        Scene scene = new Scene(pane, 600, 1200);
         
         primaryStage.setTitle("Image Viewer");
         primaryStage.setScene(scene);
